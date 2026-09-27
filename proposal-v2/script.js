@@ -29,6 +29,15 @@ filterTabs.forEach((tab) => {
   });
 });
 
+// Occasion icons: jump to the portfolio pre-filtered to that category
+const occasionLinks = document.querySelectorAll('.occasion[data-filter]');
+occasionLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    const tab = document.querySelector(`.filter-tab[data-filter="${link.dataset.filter}"]`);
+    if (tab) tab.click();
+  });
+});
+
 // Quote form: prototype-only submit feedback (no data is actually sent)
 const quoteForm = document.querySelector('.quote form');
 if (quoteForm) {
