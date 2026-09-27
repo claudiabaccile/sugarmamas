@@ -38,6 +38,17 @@ occasionLinks.forEach((link) => {
   });
 });
 
+// File upload: show chosen file name(s) next to the custom "Choose File" button
+const fileInput = document.getElementById('ref-images');
+const fileName = document.querySelector('.file-upload-name');
+if (fileInput && fileName) {
+  fileInput.addEventListener('change', () => {
+    fileName.textContent = fileInput.files.length
+      ? Array.from(fileInput.files).map((f) => f.name).join(', ')
+      : 'No file chosen';
+  });
+}
+
 // Quote form: prototype-only submit feedback (no data is actually sent)
 const quoteForm = document.querySelector('.quote form');
 if (quoteForm) {

@@ -184,7 +184,14 @@
             <label class="checkbox-label"><input type="checkbox" name="desserts" value="Others" />Others</label>
           </fieldset>
           <label>Guest count / servings needed<input placeholder="e.g. 25 guests" /></label>
-          <label>Design, theme or reference pictures<input type="file" accept="image/*" multiple /></label>
+          <div class="field">
+            <span class="field-label-text">Design, theme or reference pictures</span>
+            <div class="file-upload">
+              <input type="file" id="ref-images" accept="image/*" multiple />
+              <label for="ref-images" class="file-upload-btn">Choose File</label>
+              <span class="file-upload-name">No file chosen</span>
+            </div>
+          </div>
           <label class="full-width">Anything else we should know?<textarea rows="3" placeholder="Colors, placement of details, name/age, etc."></textarea></label>
           <button class="button button-light full-width" type="submit">Submit Inquiry</button>
           <p class="form-message" aria-live="polite"></p>
