@@ -76,7 +76,7 @@ svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width:
   min-height: min(82vh, 640px); display: flex; align-items: center; padding: 60px var(--gutter);
   background:
     linear-gradient(90deg, rgba(38, 26, 20, .78) 0%, rgba(38, 26, 20, .45) 45%, rgba(38, 26, 20, 0) 75%),
-    url(images/hero.jpg) center right / cover no-repeat,
+    url(images/hero.svg) center right / cover no-repeat,
     radial-gradient(circle at 75% 40%, #e7c2ac 0%, #a77a5f 35%, #4a3326 75%);
   color: #fff;
 }
@@ -109,7 +109,7 @@ svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width:
   color: #fff; padding: 90px var(--gutter);
   background:
     linear-gradient(90deg, rgba(30, 20, 16, .9) 0%, rgba(30, 20, 16, .65) 55%, rgba(30, 20, 16, .15) 100%),
-    url(images/reputation.jpg) center right / cover no-repeat,
+    url(images/reputation.svg) center right / cover no-repeat,
     linear-gradient(120deg, #2a1c17, #5a4032 60%, #a58468);
 }
 .reputation-inner { max-width: var(--max); margin: 0 auto; }
@@ -157,7 +157,7 @@ svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width:
   padding: 80px var(--gutter); display: grid; grid-template-columns: 1fr 3fr; gap: 40px; align-items: center;
   background:
     linear-gradient(90deg, rgba(40, 26, 20, .75) 0%, rgba(40, 26, 20, .35) 60%, rgba(40, 26, 20, .15) 100%),
-    url(images/testimonials.jpg) center / cover no-repeat,
+    url(images/testimonials.svg) center / cover no-repeat,
     linear-gradient(120deg, #4a3226, #8c6a57 50%, #e8c6bb);
   color: #fff;
 }
@@ -181,7 +181,7 @@ svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width:
   text-align: center; padding: 70px var(--gutter); color: #fff;
   background:
     linear-gradient(rgba(46, 30, 24, .55), rgba(46, 30, 24, .55)),
-    url(images/cta.jpg) center / cover no-repeat,
+    url(images/cta.svg) center / cover no-repeat,
     linear-gradient(120deg, #5a3e32, #9d7564 55%, #e0b8ae);
 }
 .cta-script { font-size: clamp(34px, 4.4vw, 52px); line-height: 1.1; }
