@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sugar Mamas Cakes & Bakery — custom cakes, decorated cookies, cupcakes and macarons made from scratch in La Habra, CA." />
+    <title>Sugar Mamas Cakes &amp; Bakery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=Nunito+Sans:wght@400;600;700;800&family=Yellowtail&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="announce">
+      <p>Order at least <strong>14 days</strong> ahead · Custom cakes: inquire about a month before your event</p>
+    </div>
+
+    <header class="header">
+      <div class="header-inner">
+        <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+        <a class="logo" href="#top"><span class="logo-script">Sugar Mamas</span><span class="logo-sub">Cakes &amp; Bakery</span></a>
+        <nav id="nav" class="nav">
+          <div class="dropdown">
+            <button class="nav-link drop-btn" aria-expanded="false">Shop <span aria-hidden="true">▾</span></button>
+            <div class="drop-menu">
+              <a href="#shop" data-filter="cakes">Cakes</a>
+              <a href="#shop" data-filter="cookies">Decorated Cookies</a>
+              <a href="#shop" data-filter="sweets">Cupcakes &amp; Macarons</a>
+              <a href="#shop" data-filter="all">Shop All</a>
+            </div>
+          </div>
+          <a class="nav-link" href="#custom">Custom Cakes</a>
+          <a class="nav-link" href="#cookies">Cookies</a>
+          <a class="nav-link" href="#wedding">Weddings</a>
+          <a class="nav-link" href="#tasting">Tastings</a>
+          <a class="nav-link" href="#faq">FAQ</a>
+          <a class="nav-link" href="#visit">Visit Us</a>
+        </nav>
+        <div class="header-cta">
+          <a class="btn btn-pink btn-small hide-sm" href="#custom">Get Pricing</a>
+          <button class="bag" aria-label="Your order"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg><span class="bag-count">0</span></button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="kicker"><span class="dot"></span> As seen on Food Network</p>
+          <h1>Cakes &amp; cookies made from scratch for <em>every</em> celebration.</h1>
+          <p class="lede">Custom cakes, hand-decorated cookies, cupcakes and macarons, baked fresh in La Habra with natural ingredients. Never frozen.</p>
+          <div class="hero-btns">
+            <a class="btn btn-dark" href="#shop">Order Now</a>
+            <a class="btn btn-line" href="#custom">Get Custom Cake Pricing</a>
+          </div>
+          <ul class="hero-proof">
+            <li><strong>Winner Cake All</strong><span>Food Network</span></li>
+            <li><strong>Cakealikes</strong><span>Food Network</span></li>
+            <li><strong>OC Fair</strong><span>Multiple awards</span></li>
+          </ul>
+        </div>
+        <div class="hero-art">
+          <img src="images/hero.svg" alt="Pink tiered floral cake surrounded by decorated cookies and macarons" />
+          <div class="sticker"><span>Swiss</span>buttercream<br />always</div>
+        </div>
+      </section>
+
+      <!-- CATEGORIES -->
+      <section class="section cats">
+        <div class="section-title">
+          <h2>Shop by treat</h2>
+          <a class="more" href="#shop">Shop all →</a>
+        </div>
+        <div class="cat-grid">
+          <a class="cat" href="#shop" data-filter="cakes"><img src="images/cat-cakes.svg" alt="" /><span>Cakes</span></a>
+          <a class="cat" href="#shop" data-filter="cookies"><img src="images/cat-cookies.svg" alt="" /><span>Decorated Cookies</span></a>
+          <a class="cat" href="#shop" data-filter="sweets"><img src="images/cat-cupcakes.svg" alt="" /><span>Cupcakes</span></a>
+          <a class="cat" href="#shop" data-filter="sweets"><img src="images/cat-macarons.svg" alt="" /><span>Macarons</span></a>
+        </div>
+      </section>
+
+      <!-- SHOP -->
+      <section class="section shop" id="shop">
+        <div class="section-title">
+          <div>
+            <p class="eyebrow">Fan favorites</p>
+            <h2>Order online, pick up in La Habra</h2>
+          </div>
+          <div class="tabs" role="tablist" aria-label="Filter products">
+            <button class="tab active" data-filter="all">All</button>
+            <button class="tab" data-filter="cakes">Cakes</button>
+            <button class="tab" data-filter="cookies">Cookies</button>
+            <button class="tab" data-filter="sweets">Cupcakes &amp; Macarons</button>
+          </div>
+        </div>
+        <div class="products">
+          <article class="product" data-cat="cakes">
+            <div class="product-img"><img src="images/p-birthday.svg" alt="Sprinkle birthday cake with candles" /><span class="tag">Best seller</span></div>
+            <h3>Sprinkle Birthday Cake</h3>
+            <p>Three layers of sponge, two fillings, Swiss buttercream and a whole lot of sprinkles.</p>
+            <button class="btn btn-pink add" data-name="Sprinkle Birthday Cake">Add to order</button>
+          </article>
+          <article class="product" data-cat="cakes">
+            <div class="product-img"><img src="images/p-floral.svg" alt="Tiered cake with peach flowers" /></div>
+            <h3>Garden Floral Cake</h3>
+            <p>Tiered and dressed in buttercream flowers. Great for showers and anniversaries.</p>
+            <button class="btn btn-pink add" data-name="Garden Floral Cake">Add to order</button>
+          </article>
+          <article class="product" data-cat="cakes">
+            <div class="product-img"><img src="images/p-drip.svg" alt="Pink drip cake topped with macarons" /><span class="tag tag-mint">New</span></div>
+            <h3>Pink Drip Cake</h3>
+            <p>Strawberry drip, topped with our macarons. A party on a cake stand.</p>
+            <button class="btn btn-pink add" data-name="Pink Drip Cake">Add to order</button>
+          </article>
+          <article class="product" data-cat="cookies">
+            <div class="product-img"><img src="images/p-cookie-box.svg" alt="Box of hand-decorated sugar cookies" /><span class="tag">Customizable</span></div>
+            <h3>Decorated Cookie Box</h3>
+            <p>Hand-iced sugar cookies in your colors, with names or messages piped on.</p>
+            <button class="btn btn-pink add" data-name="Decorated Cookie Box">Add to order</button>
+          </article>
+          <article class="product" data-cat="sweets">
+            <div class="product-img"><img src="images/p-cupcakes.svg" alt="Assorted frosted cupcakes" /></div>
+            <h3>Cupcake Dozen</h3>
+            <p>Freshly baked cupcakes, filled and frosted with Swiss buttercream.</p>
+            <button class="btn btn-pink add" data-name="Cupcake Dozen">Add to order</button>
+          </article>
+          <article class="product" data-cat="sweets">
+            <div class="product-img"><img src="images/p-macarons.svg" alt="Box of colorful macarons" /><span class="tag tag-mint">Gluten-friendly</span></div>
+            <h3>Macaron Box</h3>
+            <p>Gluten-friendly macarons, available every day in our storefront.</p>
+            <button class="btn btn-pink add" data-name="Macaron Box">Add to order</button>
+          </article>
+        </div>
+      </section>
+
+      <!-- PRESS -->
+      <section class="press">
+        <p class="press-title">Food Network favorites</p>
+        <ul class="press-list">
+          <li><span class="press-big">Winner Cake All</span><span>Food Network</span></li>
+          <li><span class="press-big">Cakealikes</span><span>Food Network</span></li>
+          <li><span class="press-big">OC Fair</span><span>Cake competition winners</span></li>
+          <li><span class="press-big">Celebrity cakes</span><span>Kim Kardashian · Christina Aguilera</span></li>
+        </ul>
+      </section>
+
+      <!-- COOKIES -->
+      <section class="split" id="cookies">
+        <div class="split-img"><img src="images/cookies-feature.svg" alt="Hand-decorated sugar cookies with flowers, hearts and messages" /></div>
+        <div class="split-copy">
+          <p class="eyebrow">Decorated cookies</p>
+          <h2>Little works of art, baked with love.</h2>
+          <p>Every cookie is hand-iced to match your party: birthdays, baby showers, weddings, graduations and corporate gifts. Add names, logos or a sweet message.</p>
+          <ul class="checks">
+            <li>Custom colors and themes</li>
+            <li>Individually wrapped for favors</li>
+            <li>Pairs perfectly with a matching cake</li>
+          </ul>
+          <a class="btn btn-dark" href="#custom">Order Custom Cookies</a>
+        </div>
+      </section>
+
+      <!-- CUSTOM CAKE FORM -->
+      <section class="custom" id="custom">
+        <div class="custom-copy">
+          <p class="eyebrow">Custom cakes</p>
+          <h2>Get pricing on a custom cake</h2>
+          <p>Tell us about your celebration and we'll reply with a design idea and a quote.</p>
+          <ol class="steps">
+            <li><strong>Send your idea</strong> Share the date, servings and any inspiration photos.</li>
+            <li><strong>Reserve your date</strong> A 50% deposit is due no less than 2 weeks before the event.</li>
+            <li><strong>Pick it up</strong> Your cake is baked fresh, never frozen, and ready at our La Habra shop.</li>
+          </ol>
+        </div>
+        <form class="quote-form" novalidate>
+          <div class="row">
+            <label for="q-name">Name<input id="q-name" name="name" required placeholder="Your name" /></label>
+            <label for="q-email">Email<input id="q-email" name="email" type="email" required placeholder="you@email.com" /></label>
+          </div>
+          <div class="row">
+            <label for="q-date">Event date<input id="q-date" name="date" type="date" required /></label>
+            <label for="q-servings">Servings<select id="q-servings" name="servings"><option>Up to 20</option><option>20–50</option><option>50–100</option><option>100+</option></select></label>
+          </div>
+          <label for="q-type">What would you like?<select id="q-type" name="type"><option>Custom cake</option><option>Decorated cookies</option><option>Cake + cookies</option><option>Wedding cake</option><option>Cupcakes or macarons</option></select></label>
+          <label for="q-details">Tell us about your idea<textarea id="q-details" name="details" rows="4" placeholder="Theme, colors, flavors, inspiration…"></textarea></label>
+          <button class="btn btn-pink" type="submit">Request a Quote</button>
+          <p class="form-note" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <!-- TASTING -->
+      <section class="section tasting" id="tasting">
+        <div class="section-title center">
+          <div>
+            <p class="eyebrow">Not sure which flavor?</p>
+            <h2>Tastings &amp; consultations</h2>
+          </div>
+        </div>
+        <div class="tasting-grid">
+          <article class="tasting-card">
+            <span class="badge">To go</span>
+            <h3>Tasting Box</h3>
+            <p>Your choice of <strong>4 freshly baked cupcakes</strong> frosted with Swiss buttercream and <strong>4 fillings</strong>. Take it home and taste at your own pace.</p>
+            <a class="more" href="#custom">Book a tasting →</a>
+          </article>
+          <article class="tasting-card tasting-feature">
+            <span class="badge">In the shop</span>
+            <h3>Cake Consultation</h3>
+            <p>Sit down with one of our cake decorators for <strong>up to an hour</strong>. Try <strong>4 cake flavors</strong> and <strong>6 fillings</strong> with Swiss buttercream while we sketch your design.</p>
+            <a class="more" href="#custom">Book a consultation →</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- WEDDING -->
+      <section class="split split-rev" id="wedding">
+        <div class="split-img"><img src="images/wedding.svg" alt="Three-tier white wedding cake with flowers" /></div>
+        <div class="split-copy">
+          <p class="eyebrow">Wedding cakes</p>
+          <h2>The cake your guests will talk about.</h2>
+          <p>From simple and elegant to show-stopping tiers, every wedding cake starts with a consultation and ends with a cake made just for the two of you.</p>
+          <a class="btn btn-dark" href="#tasting">Start with a Consultation</a>
+        </div>
+      </section>
+
+      <!-- WHY -->
+      <section class="section why">
+        <div class="section-title center"><h2>Why it tastes this good</h2></div>
+        <ul class="why-grid">
+          <li><span class="why-icon">01</span><h3>Made from scratch</h3><p>Baked as fresh as possible, never frozen.</p></li>
+          <li><span class="why-icon">02</span><h3>3 layers, 2 fillings</h3><p>Every standard tier: three layers of sponge and two of filling.</p></li>
+          <li><span class="why-icon">03</span><h3>Swiss buttercream</h3><p>Silky, not too sweet, and made in house.</p></li>
+          <li><span class="why-icon">04</span><h3>Natural ingredients</h3><p>Only the best ingredients go into our desserts.</p></li>
+        </ul>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section faq" id="faq">
+        <div class="section-title center"><h2>Good to know</h2></div>
+        <div class="faq-list">
+          <details open>
+            <summary>How far ahead should I order?</summary>
+            <p>We need at least 14 days of lead time. For custom orders, reach out about a month before your event.</p>
+          </details>
+          <details>
+            <summary>Do you require a deposit?</summary>
+            <p>Yes. Custom orders need a 50% deposit no less than 2 weeks before the event date.</p>
+          </details>
+          <details>
+            <summary>Do you have gluten-friendly options?</summary>
+            <p>Our macarons are gluten-friendly and available every day in the storefront.</p>
+          </details>
+          <details>
+            <summary>Can I buy something the same day?</summary>
+            <p>Stop by during open hours for cupcakes, cookies and macarons from the case. Custom work always needs advance notice.</p>
+          </details>
+        </div>
+      </section>
+
+      <!-- VISIT -->
+      <section class="visit" id="visit">
+        <div class="visit-card">
+          <p class="eyebrow">Visit the shop</p>
+          <h2>Come say hi in La Habra</h2>
+          <address>2408 W Whittier Blvd<br />La Habra, CA 90631</address>
+          <p class="phone">(562) 690-6393</p>
+          <a class="btn btn-pink" href="https://maps.google.com/?q=2408+W+Whittier+Blvd+La+Habra+CA+90631" target="_blank" rel="noopener">Get Directions</a>
+        </div>
+        <table class="hours">
+          <caption>Store hours</caption>
+          <tbody>
+            <tr><th>Monday</th><td class="closed">Closed</td></tr>
+            <tr><th>Tuesday</th><td>10:00 am – 6:00 pm</td></tr>
+            <tr><th>Wednesday</th><td>10:00 am – 6:00 pm</td></tr>
+            <tr><th>Thursday</th><td class="closed">Closed</td></tr>
+            <tr><th>Friday</th><td>10:00 am – 6:00 pm</td></tr>
+            <tr><th>Saturday</th><td>10:00 am – 4:00 pm</td></tr>
+            <tr><th>Sunday</th><td class="closed">Closed</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- INSTAGRAM -->
+      <section class="insta">
+        <p class="eyebrow center">Follow along on Instagram</p>
+        <div class="insta-grid">
+          <img src="images/p-drip.svg" alt="" /><img src="images/cat-cookies.svg" alt="" /><img src="images/cat-cakes.svg" alt="" />
+          <img src="images/cat-macarons.svg" alt="" /><img src="images/p-birthday.svg" alt="" /><img src="images/cat-cupcakes.svg" alt="" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-grid">
+        <div>
+          <a class="logo logo-light" href="#top"><span class="logo-script">Sugar Mamas</span><span class="logo-sub">Cakes &amp; Bakery</span></a>
+          <p>Custom cakes and desserts made from scratch in La Habra, California.</p>
+        </div>
+        <div>
+          <h4>Shop</h4>
+          <a href="#shop">Cakes</a><a href="#cookies">Decorated Cookies</a><a href="#shop">Cupcakes</a><a href="#shop">Macarons</a>
+        </div>
+        <div>
+          <h4>Info</h4>
+          <a href="#custom">Custom Cakes</a><a href="#wedding">Wedding Cakes</a><a href="#tasting">Tastings</a><a href="#faq">FAQ</a>
+        </div>
+        <div>
+          <h4>Get sweet news</h4>
+          <form class="news">
+            <label class="sr-only" for="n-email">Email</label>
+            <input id="n-email" type="email" required placeholder="Email address" />
+            <button class="btn btn-pink btn-small" type="submit">Join</button>
+          </form>
+          <p class="news-note" aria-live="polite"></p>
+        </div>
+      </div>
+      <p class="copy">© <span class="year">2026</span> Sugar Mamas Cakes &amp; Bakery · Draft v2 — illustrations are placeholders</p>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite" hidden></div>
+    <script src="script.js"></script>
+  </body>
+</html>
