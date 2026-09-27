@@ -21,3 +21,11 @@ document.querySelector('.quote form')?.addEventListener('submit', (event) => {
   event.preventDefault();
   event.currentTarget.querySelector('.form-message').textContent = 'Thank you! This prototype would now send your request to the bakery.';
 });
+
+// CTAs do cardápio: já deixa o produto escolhido no formulário de pedido
+document.querySelectorAll('.menu-cta[data-order]').forEach((link) => {
+  link.addEventListener('click', () => {
+    const select = document.querySelector('.quote select');
+    if (select) select.value = link.dataset.order;
+  });
+});
