@@ -168,7 +168,28 @@
         <div class="cta-overlay"><p class="script cta-script">Every cake tells a story.</p><h2>Let's create yours.</h2><a class="button button-light" href="#quote">Start Your Order <span>→</span></a></div>
       </section>
 
-      <section class="quote" id="quote"><div><p class="eyebrow">Let's make something sweet</p><h2>Have a celebration<br />coming up?</h2><p>Tell us a little about it and we'll be in touch with a custom quote within 2 business days.</p></div><form><label>Name<input required placeholder="Your name" /></label><label>Email<input type="email" required placeholder="you@email.com" /></label><label>What are we celebrating?<select><option>Custom cake</option><option>Cupcakes</option><option>Macarons</option><option>Cookies, brownies &amp; bars</option><option>Cake shots &amp; cake pops</option><option>Tarts &amp; seasonal treats</option><option>A full dessert table</option></select></label><label>Event date<input type="date" /></label><button class="button button-light" type="submit">Start my order</button><p class="form-message" aria-live="polite"></p></form></section>
+      <section class="quote" id="quote">
+        <div><p class="eyebrow">Let's make something sweet</p><h2>Get in touch<br />with Sugar Mama's</h2><p>Fill out the inquiry form below and we'll follow up with a custom quote. A 50% nonrefundable deposit is required at least 14 days prior to pick-up — we recommend inquiring 3-4 weeks in advance. It's never too early to inquire!</p></div>
+        <form>
+          <label>First Name<input required placeholder="First name" /></label>
+          <label>Last Name<input required placeholder="Last name" /></label>
+          <label>Email<input type="email" required placeholder="you@email.com" /></label>
+          <label>Phone<input type="tel" required placeholder="(  )    -" /></label>
+          <label>Pick-Up Date<input type="date" required /></label>
+          <label>How did you hear about us?<select required><option value="" selected disabled>Select an option</option><option>Instagram</option><option>Facebook</option><option>Google</option><option>Yelp</option><option>Word of Mouth</option><option>Other</option></select></label>
+          <fieldset class="checkbox-group"><legend>Which desserts are you interested in?</legend>
+            <label class="checkbox-label"><input type="checkbox" name="desserts" value="Cakes" />Cakes</label>
+            <label class="checkbox-label"><input type="checkbox" name="desserts" value="Cupcakes" />Cupcakes</label>
+            <label class="checkbox-label"><input type="checkbox" name="desserts" value="Cookies" />Cookies</label>
+            <label class="checkbox-label"><input type="checkbox" name="desserts" value="Others" />Others</label>
+          </fieldset>
+          <label>Guest count / servings needed<input placeholder="e.g. 25 guests" /></label>
+          <label>Design, theme or reference pictures<input type="file" accept="image/*" multiple /></label>
+          <label class="full-width">Anything else we should know?<textarea rows="3" placeholder="Colors, placement of details, name/age, etc."></textarea></label>
+          <button class="button button-light full-width" type="submit">Submit Inquiry</button>
+          <p class="form-message" aria-live="polite"></p>
+        </form>
+      </section>
 
       <section class="faq" id="faq">
         <p class="eyebrow center">Good to Know</p>

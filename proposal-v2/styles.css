@@ -160,8 +160,15 @@ nav#site-nav a:hover{opacity:.6}
 .quote>div>p:not(.eyebrow){max-width:400px;color:#d9cfd0;margin-top:24px}
 .quote form{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-content:start}
 .quote label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#dacdd0}
-.quote input,.quote select{display:block;width:100%;padding:12px 0;background:transparent;color:#fff;border:0;border-bottom:1px solid #897b7e;font:15px "DM Sans";outline:0}
+.quote input,.quote select,.quote textarea{display:block;width:100%;padding:12px 0;background:transparent;color:#fff;border:0;border-bottom:1px solid #897b7e;font:15px "DM Sans";outline:0;resize:vertical}
 .quote select option{color:#31282b}
+.quote input[type="file"]{padding:10px 0;font-size:13px}
+.quote input[type="date"]{color-scheme:dark}
+.quote .full-width{grid-column:1/-1}
+.quote .checkbox-group{grid-column:1/-1;border:0;padding:0;margin:6px 0 0}
+.quote .checkbox-group legend{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#dacdd0;padding:0;margin-bottom:10px}
+.checkbox-label{display:inline-flex!important;align-items:center;gap:8px;width:auto!important;margin:0 22px 10px 0;font:14px "DM Sans"!important;text-transform:none!important;letter-spacing:normal!important;color:#fff!important}
+.checkbox-label input[type="checkbox"]{width:auto;accent-color:var(--pink)}
 .quote form button,.form-message{grid-column:1/-1;margin-top:12px}
 .form-message{font-size:13px;color:var(--yellow);margin:0}
 
