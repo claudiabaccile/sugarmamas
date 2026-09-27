@@ -3,58 +3,281 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A concept storefront for Sugar Mamas The Bakery." />
-    <title>Sugar Mamas — Cookies & Custom Cakes</title>
+    <meta name="description" content="Sugar Mama's The Bakery — custom cakes, desserts and special events in Orange County, CA." />
+    <title>Sugar Mama's — The Bakery</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Great+Vibes&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="announcement">Now taking November orders · <a href="#cookies">Shop holiday cookie boxes</a></div>
+    <!-- Header -->
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Sugar Mamas home"><span>sugar</span> mamas<small>the bakery</small></a>
-      <button class="menu-button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <nav id="site-nav">
-        <a href="#cookies">Cookies</a><a href="#cakes">Custom cakes</a><a href="#gallery">Gallery</a><a href="#how-it-works">How it works</a>
+      <a class="logo" href="#top" aria-label="Sugar Mama's The Bakery — home">
+        <span class="logo-script">Sugar Mama's</span>
+        <span class="logo-sub">The Bakery</span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav">
+        <a href="#top" class="active">Home</a>
+        <a href="#process">Our Story</a>
+        <a href="#cakes">Cakes</a>
+        <a href="#occasions">Desserts</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#press">Press</a>
+        <a href="#footer">FAQ</a>
       </nav>
-      <a class="cart-link" href="#cookies">Bag <span>0</span></a>
+      <div class="header-actions">
+        <a class="btn btn-primary btn-sm" href="#cta">Get a Quote</a>
+        <a class="icon-link" href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg>
+        </a>
+      </div>
     </header>
 
     <main id="top">
+      <!-- Hero -->
       <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">Anaheim, California · Made to celebrate</p>
-          <h1>The sweetest part<br />of every <em>celebration.</em></h1>
-          <p class="lede">Custom cakes by Ianete and hand-decorated cookies by Débora — thoughtfully made for your happiest gatherings.</p>
-          <div class="actions"><a class="button button-dark" href="#cakes">Order a custom cake</a><a class="text-link" href="#cookies">Shop cookies <span>→</span></a></div>
-          <div class="hero-note"><span class="dot"></span> Orders available for local pickup in Anaheim</div>
-        </div>
-        <div class="hero-art" aria-label="A pink celebration cake illustration">
-          <div class="sun"></div><div class="arch"></div><div class="cake cake-large"><i></i><b></b><strong>happy<br />day!</strong></div><div class="cookie cookie-one">♥</div><div class="cookie cookie-two">✦</div><div class="sprinkle s1"></div><div class="sprinkle s2"></div><div class="sprinkle s3"></div>
-        </div>
-      </section>
-
-      <section class="intro"><p class="eyebrow">Baked with love, made for you</p><h2>Two cake-loving mamas,<br />one very sweet mission.</h2><p>We turn birthdays, weddings, showers and “just because” moments into something deliciously unforgettable.</p><a class="text-link" href="#about">Meet the mamas <span>→</span></a></section>
-
-      <section class="shop-section" id="cookies">
-        <div class="section-heading"><div><p class="eyebrow">Débora’s cookie shop</p><h2>Good things come in boxes.</h2></div><a class="text-link" href="#cookies">View all cookies <span>→</span></a></div>
-        <div class="product-grid">
-          <article class="product"><div class="product-image cookie-box peach"><div class="mini-cookie flower">✦</div><div class="mini-cookie heart">♥</div><div class="mini-cookie round">S</div></div><div class="product-copy"><div><h3>The Classic Box</h3><p>12 decorated sugar cookies</p></div><strong>$42</strong></div><button class="quick-add" data-product="The Classic Box">Quick add <span>+</span></button></article>
-          <article class="product"><div class="product-image cookie-box lemon"><div class="mini-cookie lemon-slice">☼</div><div class="mini-cookie daisy">✿</div><div class="mini-cookie round">S</div></div><div class="product-copy"><div><h3>Little Sunshine Set</h3><p>6 cookies · seasonal</p></div><strong>$24</strong></div><button class="quick-add" data-product="Little Sunshine Set">Quick add <span>+</span></button></article>
-          <article class="product"><div class="product-image cookie-box lilac"><div class="mini-cookie butterfly">♢</div><div class="mini-cookie heart">♥</div><div class="mini-cookie flower">✦</div></div><div class="product-copy"><div><h3>Celebrate You</h3><p>8 cookies · custom message</p></div><strong>$32</strong></div><button class="quick-add" data-product="Celebrate You">Quick add <span>+</span></button></article>
+        <div class="hero-inner">
+          <p class="eyebrow light">Custom Cakes • Desserts • Special Events</p>
+          <h1>Cakes Made<br />For Your<br />Moment</h1>
+          <p class="script hero-script">Beautiful cakes. Unforgettable celebrations.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#cakes">View Our Cakes</a>
+            <a class="btn btn-outline-light" href="#cta">Get a Quote</a>
+          </div>
         </div>
       </section>
 
-      <section class="cake-feature" id="cakes"><div class="feature-art"><div class="ribbon r1"></div><div class="ribbon r2"></div><div class="cake cake-featured"><i></i><b></b><strong>make<br />a wish</strong></div><div class="cherry c1"></div><div class="cherry c2"></div></div><div class="feature-copy"><p class="eyebrow">Ianete’s custom cakes</p><h2>A cake as original<br />as the person you’re celebrating.</h2><p>From the first sketch to the final flourish, every cake is designed around your story, your style and your favorite flavors.</p><ul><li>Birthdays & milestone celebrations</li><li>Baby showers & weddings</li><li>Starting at $145</li></ul><a class="button button-dark" href="#quote">Request a cake quote</a></div></section>
+      <!-- Occasions -->
+      <section class="occasions" id="occasions">
+        <p class="eyebrow center">What are you celebrating?</p>
+        <p class="section-sub">Every occasion deserves a cake as special as the moment.</p>
+        <ul class="occasion-list">
+          <li><a href="#portfolio" data-jump="weddings"><span class="circle-icon">
+            <svg viewBox="0 0 24 24"><circle cx="9" cy="14" r="5"/><circle cx="15" cy="14" r="5"/><path d="M10 5l2-2 2 2-2 2z"/></svg>
+          </span>Weddings</a></li>
+          <li><a href="#portfolio" data-jump="birthdays"><span class="circle-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 20h16M5 20v-7h14v7M7 13v-3h10v3M12 10V7M12 4.5v.5"/><path d="M5 16c1.5 1 2.5 1 3.5 0s2.5-1 3.5 0 2.5 1 3.5 0 2.5-1 3.5 0"/></svg>
+          </span>Birthdays</a></li>
+          <li><a href="#portfolio" data-jump="baby"><span class="circle-icon">
+            <svg viewBox="0 0 24 24"><path d="M9 21c-2.5 0-4-2-4-5 0-4 2-8 5-8s4 2.5 4 5c0 4-2 8-5 8z"/><circle cx="14" cy="4" r="1.2"/><circle cx="17" cy="5" r="1"/><circle cx="19" cy="7.5" r=".9"/><circle cx="11.5" cy="3.5" r="1"/></svg>
+          </span>Baby Showers</a></li>
+          <li><a href="#portfolio" data-jump="quince"><span class="circle-icon">
+            <svg viewBox="0 0 24 24"><path d="M3 8l4 4 5-7 5 7 4-4-2 11H5z"/><path d="M5 19h14"/></svg>
+          </span>Quinceañeras</a></li>
+          <li><a href="#portfolio" data-jump="corporate"><span class="circle-icon">
+            <svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a1 1 0 011-1h4a1 1 0 011 1v2M3 12h18M11 12v2h2v-2"/></svg>
+          </span>Corporate</a></li>
+          <li><a href="#portfolio" data-jump="custom"><span class="circle-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg>
+          </span>Other</a></li>
+        </ul>
+      </section>
 
-      <section class="process" id="how-it-works"><p class="eyebrow">Sweet and simple</p><h2>How ordering works</h2><div class="steps"><article><span>01</span><h3>Choose your treat</h3><p>Shop a cookie box or tell us about the cake you are dreaming of.</p></article><article><span>02</span><h3>Pick your date</h3><p>Select a local pickup time that works beautifully for your celebration.</p></article><article><span>03</span><h3>Celebrate!</h3><p>Bring home a little extra joy, made just for your special moment.</p></article></div></section>
+      <!-- Signature cakes -->
+      <section class="signature" id="cakes">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Our Signature Cakes</p>
+            <h2>Timeless Designs. Endless Possibilities.</h2>
+          </div>
+          <a class="link-arrow" href="#portfolio">View all cakes →</a>
+        </div>
+        <div class="cake-grid">
+          <article class="cake-card">
+            <div class="media" role="img" aria-label="White classic wedding cake with flowers" style="--img:url(images/cake-classic-wedding.jpg)"></div>
+            <h3>Classic Wedding</h3>
+            <p>Elegant, romantic and always in style.</p>
+          </article>
+          <article class="cake-card">
+            <div class="media alt-1" role="img" aria-label="Birthday cake with colorful sprinkles and candles" style="--img:url(images/cake-birthday.jpg)"></div>
+            <h3>Birthday Celebration</h3>
+            <p>Because every birthday deserves something sweet.</p>
+          </article>
+          <article class="cake-card">
+            <div class="media alt-2" role="img" aria-label="Pink floral tiered cake" style="--img:url(images/cake-floral.jpg)"></div>
+            <h3>Floral Cake</h3>
+            <p>Natural beauty, handcrafted with love.</p>
+          </article>
+          <article class="cake-card">
+            <div class="media alt-3" role="img" aria-label="Chocolate drip statement cake" style="--img:url(images/cake-statement.jpg)"></div>
+            <h3>Statement Cake</h3>
+            <p>For the bold, the creative, the unforgettable.</p>
+          </article>
+        </div>
+      </section>
 
-      <section class="gallery" id="gallery"><div class="section-heading"><div><p class="eyebrow">From our kitchen to your party</p><h2>Made for making memories.</h2></div><a class="text-link" href="#instagram">Follow along <span>→</span></a></div><div class="gallery-grid"><div class="gallery-card g1"><span>Birthday magic</span></div><div class="gallery-card g2"><span>Pretty little details</span></div><div class="gallery-card g3"><span>Made to share</span></div><div class="gallery-card g4"><span>Sweetest showers</span></div></div></section>
+      <!-- Reputation / press -->
+      <section class="reputation" id="press">
+        <div class="reputation-inner">
+          <p class="eyebrow light">Trusted. Award-winning. Loved.</p>
+          <h2>A Reputation<br />Built on Sweetness.</h2>
+          <ul class="badges">
+            <li><span class="badge-food">food<small>network</small></span></li>
+            <li><span class="badge-ocfair">OC<b>FAIR</b><small>&amp; Event Center</small></span></li>
+            <li class="badge-text">As seen on<br />Food Network</li>
+            <li class="badge-text with-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/></svg>
+              Multiple OC Fair<br />award winners
+            </li>
+          </ul>
+        </div>
+      </section>
 
-      <section class="quote" id="quote"><div><p class="eyebrow">Let’s make something sweet</p><h2>Have a celebration<br />coming up?</h2><p>Tell us a little about it and we’ll be in touch with a custom quote within 2 business days.</p></div><form><label>Name<input required placeholder="Your name" /></label><label>Email<input type="email" required placeholder="you@email.com" /></label><label>What are we celebrating?<select><option>Custom cake</option><option>Custom cookies</option><option>Both, please!</option></select></label><label>Event date<input type="date" /></label><button class="button button-light" type="submit">Start my order</button><p class="form-message" aria-live="polite"></p></form></section>
+      <!-- Process -->
+      <section class="process" id="process">
+        <div class="process-intro">
+          <p class="eyebrow">The Sugar Mama's Process</p>
+          <h2>From Your Idea to<br />The Perfect Cake</h2>
+          <p>We make it easy to bring your vision to life. Our step-by-step process ensures every detail is just right — from flavor to final touches.</p>
+          <a class="btn btn-primary" href="#cta">Get a Quote →</a>
+        </div>
+        <ol class="steps">
+          <li>
+            <span class="step-num">01</span>
+            <span class="circle-icon lg"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg></span>
+            <h3>Tell Us<br />Your Idea</h3>
+            <p>Share your inspiration, theme, date and any special details.</p>
+          </li>
+          <li>
+            <span class="step-num">02</span>
+            <span class="circle-icon lg"><svg viewBox="0 0 24 24"><path d="M6 12h12l-2 9H8z"/><path d="M5 12a7 5 0 0114 0"/><path d="M12 4v3"/></svg></span>
+            <h3>Choose<br />Your Flavors</h3>
+            <p>Pick your cake, filling, frosting and extras.</p>
+          </li>
+          <li>
+            <span class="step-num">03</span>
+            <span class="circle-icon lg"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 100 18c1.5 0 2-1 2-2s-1-1.5-1-2.5 1-1.5 2-1.5h2a4 4 0 004-4c0-4.5-4-8-9-8z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10" cy="7" r="1"/><circle cx="15" cy="7" r="1"/></svg></span>
+            <h3>We Design It</h3>
+            <p>We'll create a custom design just for you.</p>
+          </li>
+          <li>
+            <span class="step-num">04</span>
+            <span class="circle-icon lg"><svg viewBox="0 0 24 24"><rect x="4" y="6" width="16" height="15" rx="1"/><path d="M4 11h16M9 3v3M15 3v3M10 15h4"/></svg></span>
+            <h3>We Bake It</h3>
+            <p>Your cake is handcrafted with love and care.</p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Portfolio -->
+      <section class="portfolio" id="portfolio">
+        <p class="eyebrow">Our Portfolio</p>
+        <h2>Find Your Cake Style</h2>
+        <div class="filters" role="tablist" aria-label="Filter portfolio">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="weddings">Weddings</button>
+          <button class="filter" data-filter="birthdays">Birthdays</button>
+          <button class="filter" data-filter="baby">Baby Showers</button>
+          <button class="filter" data-filter="quince">Quinceañeras</button>
+          <button class="filter" data-filter="corporate">Corporate</button>
+          <button class="filter" data-filter="kids">Kids</button>
+          <button class="filter" data-filter="custom">Custom</button>
+        </div>
+        <div class="gallery">
+          <figure class="g-item g-tall" data-cat="weddings quince"><div class="media" role="img" aria-label="Floral drip wedding cake" style="--img:url(images/portfolio-1.jpg)"></div></figure>
+          <figure class="g-item" data-cat="birthdays corporate"><div class="media alt-2" role="img" aria-label="Frosted cupcakes" style="--img:url(images/portfolio-2.jpg)"></div></figure>
+          <figure class="g-item" data-cat="baby kids"><div class="media alt-4" role="img" aria-label="Light blue baby shower cake" style="--img:url(images/portfolio-3.jpg)"></div></figure>
+          <figure class="g-item" data-cat="custom weddings"><div class="media alt-3" role="img" aria-label="Gold drip cake with macarons" style="--img:url(images/portfolio-4.jpg)"></div></figure>
+          <figure class="g-item" data-cat="corporate custom"><div class="media alt-1" role="img" aria-label="Decorated cookies" style="--img:url(images/portfolio-5.jpg)"></div></figure>
+          <figure class="g-item" data-cat="birthdays kids"><div class="media alt-2" role="img" aria-label="Sprinkle birthday cake" style="--img:url(images/portfolio-6.jpg)"></div></figure>
+        </div>
+        <p class="empty-msg" hidden>More cakes in this category coming soon!</p>
+        <div class="center"><a class="btn btn-outline" href="#">View Full Gallery →</a></div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="testimonials">
+        <div class="testimonials-intro">
+          <p class="eyebrow light">Real People. Real Celebrations.</p>
+          <h2>Kind Words</h2>
+          <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+        </div>
+        <div class="slider">
+          <div class="slides">
+            <blockquote class="quote-card">
+              <p>"The cake was absolutely stunning and tasted even better! Sarah and her team made our dream wedding cake come to life."</p>
+              <footer>— Sarah L.<span>Bride</span></footer>
+            </blockquote>
+            <blockquote class="quote-card">
+              <p>"Every detail was perfect! The flavors were incredible and our guests couldn't stop talking about it."</p>
+              <footer>— Melissa T.<span>Birthday Celebration</span></footer>
+            </blockquote>
+            <blockquote class="quote-card">
+              <p>"Sugar Mama's is truly the best! Professional, creative and so talented. We are so grateful!"</p>
+              <footer>— Amanda R.<span>Corporate Event</span></footer>
+            </blockquote>
+            <blockquote class="quote-card">
+              <p>"Our daughter's quinceañera cake was a dream. Beautiful, delicious and delivered right on time."</p>
+              <footer>— Gabriela M.<span>Quinceañera</span></footer>
+            </blockquote>
+          </div>
+          <div class="slider-controls">
+            <div class="dots" aria-hidden="true"></div>
+            <button class="slider-next" aria-label="Next testimonial">→</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta" id="cta">
+        <p class="script cta-script">Every cake tells a story.</p>
+        <p class="eyebrow light center">Let's create yours.</p>
+        <a class="btn btn-primary" href="mailto:hello@sugarmamasbakery.com">Start Your Order →</a>
+      </section>
     </main>
-    <footer id="about"><a class="brand" href="#top"><span>sugar</span> mamas<small>the bakery</small></a><div><h3>Come say hi</h3><p>Anaheim, California<br />Pickup by appointment</p></div><div><h3>Keep it sweet</h3><p><a href="#instagram">Instagram</a><br /><a href="mailto:hello@sugarmamas.com">hello@sugarmamas.com</a></p></div><p class="copyright">© 2026 Sugar Mamas The Bakery<br />Prototype concept only.</p></footer>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="footer">
+      <div class="footer-grid">
+        <a class="logo" href="#top" aria-label="Sugar Mama's The Bakery — home">
+          <span class="logo-script">Sugar Mama's</span>
+          <span class="logo-sub">The Bakery</span>
+        </a>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#process">Our Story</a></li>
+            <li><a href="#cakes">Cakes</a></li>
+            <li><a href="#occasions">Desserts</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#footer">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="contact">
+            <li><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a1 1 0 01-1 1A16 16 0 014 5a1 1 0 011-1"/></svg><a href="tel:+17145550199">(714) 555-0199</a></li>
+            <li><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 6l9 7 9-7"/></svg><a href="mailto:hello@sugarmamasbakery.com">hello@sugarmamasbakery.com</a></li>
+            <li><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.5-7-12a7 7 0 0114 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Orange County, CA</li>
+          </ul>
+          <div class="socials">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 00-4 4v2H7v4h3v7h4v-7h3l1-4h-4V8z"/></svg></a>
+            <a href="#" aria-label="Pinterest"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M11 8.5c3-1 5 1 4.5 3.5S12 15 11 13m.5-3L9 20"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Join Our Sweet List</h4>
+          <p>Be the first to know about new flavors, specials and upcoming events.</p>
+          <form class="newsletter">
+            <label class="sr-only" for="nl-email">Email address</label>
+            <input id="nl-email" type="email" required placeholder="Your email address" />
+            <button type="submit" aria-label="Subscribe">→</button>
+          </form>
+          <p class="form-msg" aria-live="polite"></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Sugar Mama's The Bakery. All rights reserved.</p>
+        <p><a href="#">Terms &amp; Conditions</a><a href="#">Privacy Policy</a></p>
+      </div>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
