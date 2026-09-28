@@ -25,7 +25,8 @@ html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif;font-size:16px;line-height:1.55}
 a{color:inherit;text-decoration:none}
 img{max-width:100%}
-h1,h2,h3{font-family:"Playfair Display",serif;margin:0}
+h1,h2{font-family:"Bebas Neue",sans-serif;text-transform:uppercase;letter-spacing:.02em;line-height:.95;margin:0}
+h3{font-family:"Playfair Display",serif;margin:0}
 .script{font-family:"Parisienne",cursive;font-weight:400}
 .eyebrow{text-transform:uppercase;font-size:11px;letter-spacing:1.8px;font-weight:700;margin:0 0 14px;color:var(--muted)}
 .eyebrow.center{text-align:center}
@@ -53,7 +54,7 @@ nav#site-nav a:hover{opacity:.6}
 
 .hero{min-height:640px;display:grid;grid-template-columns:1.05fr 1fr;background:var(--blush)}
 .hero-copy{padding:clamp(60px,9vw,120px) clamp(24px,5vw,72px);max-width:640px;display:flex;flex-direction:column;justify-content:center}
-.hero h1{font:700 clamp(42px,6vw,72px)/1.05 "Playfair Display",serif;letter-spacing:-1.5px;text-transform:uppercase;margin:0 0 20px}
+.hero h1{font-size:clamp(42px,6vw,72px);margin:0 0 20px}
 .lede{font-size:19px;font-style:italic;color:var(--body);margin:0 0 34px}
 .actions{display:flex;flex-wrap:wrap;align-items:center;gap:18px}
 .hero-art{position:relative;overflow:hidden;min-height:520px}
@@ -81,7 +82,7 @@ nav#site-nav a:hover{opacity:.6}
 
 .cookies-band{display:grid;grid-template-columns:1fr 1fr;min-height:520px;background:var(--blush)}
 .cookies-copy{padding:clamp(60px,7vw,110px) clamp(28px,6vw,90px);display:flex;flex-direction:column;justify-content:center;max-width:560px}
-.cookies-heading{font-family:"Bebas Neue",sans-serif;text-transform:uppercase;letter-spacing:.02em;font-size:clamp(52px,7vw,84px);line-height:.92;color:var(--maroon);margin-bottom:14px}
+.cookies-heading{font-size:clamp(52px,7vw,84px);color:var(--maroon);margin-bottom:14px}
 .cookies-copy .tagline{font-style:italic;font-size:16px;color:var(--body);margin:0 0 18px}
 .cookies-copy p:not(.tagline){color:var(--body);margin:0 0 26px}
 .cookies-art{position:relative;overflow:hidden}
@@ -128,7 +129,7 @@ nav#site-nav a:hover{opacity:.6}
 .about-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 25%}
 .about-copy{padding:100px clamp(28px,6vw,90px);align-self:center}
 .about-copy h2{font-size:clamp(32px,4vw,48px);margin-bottom:22px}
-.about-copy h2 em{color:var(--maroon);font-style:italic}
+.about-copy h2 em{color:var(--maroon);font-style:normal}
 .about-copy p{max-width:480px;color:var(--body);margin:0 0 16px}
 
 .testimonials{padding:100px clamp(24px,6vw,90px);background:#fff;text-align:center}
